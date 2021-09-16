@@ -1,10 +1,88 @@
 <html>
+    <head>
+        <link rel="stylesheet" href="blogTwoCSS.css">
+      </head>
     <body>
         <h1 style = 'text-align: center;'>
-            How to Flex with HTML
+            My First HTML Boxing Match
         </h1>
         <h3 style = 'text-align: center;'>
             <e>CS347</e>
         </h3>
+        <p>
+            Week two of learning HTML certainly ramped up quickly, as we began controlling where images are placed within the body, as well as implementing mox models. These were both very interesting (and difficult) to learn, however for me, the star of week two was CSS. Previosly I had to painstakingly define each elements attributes within a container, however with CSS I was able to apply style in more complex ways, covering multiple aspects of the HTML file. This was especially useful in the Box Model Lab, as I used CSS to define the style for the cards, then simply applied that style guide to each card I created. CSS is now a necessity for any HTML code that has multiple containers, images, or a specific layout I must adhere to. 
+        </p>
+        <dl>
+            These are some of the resources I used to help me through week two.
+            <dt>How to add code in-line</dt>
+            <dd>I was having difficulty adding "&lt" and "%gt" into my HTML, without it being interpreted as code. Thankfully <a href = "https://devpractical.com/display-html-tags-as-plain-text/#:~:text=You%20can%20show%20HTML%20tags,the%20reader%20on%20the%20browser.">devPractical</a> had a detailed and useful guide.</dd>
+            <dt>Making cards with CSS</dt>
+            <dd>Going into the box model lab I was clueless, but yet again <a href = "https://www.w3schools.com/howto/howto_css_cards.asp">W3 schools</a> came to the rescue.</dd>
+        </dl>
+Here is my code for the Box Model Lab!
+        <div class="row">
+            <div style = 'color:blue;'class="column">
+&lt!DOCTYPE html&gt
+&lthtml&gt
+    &lthead&gt
+        &ltlink rel="stylesheet" href="Driver.css"&gt
+      &lt/head&gt
+&ltbody&gt
+&ltdiv class="card"&gt
+    &ltdiv class="content"&gt
+        &ltimg style = "width: 200px; height: 200px;"src ="very long url"&gt
+        &ltp style= "text-align: center;"&gtA is for Apple&lt/p&gt
+    &lt/div&gt
+&lt/div&gt
+&ltdiv class="card"&gt
+    &ltdiv class="content"&gt
+        &ltimg style = "width: 200px; height: 200px;"src ="very long url"&gt
+        &ltp style= "text-align: center;"&gtB is for Banana&lt/p&gt
+    &lt/div&gt
+&lt/div&gt
+&ltdiv class="card"&gt
+    &ltdiv class="content"&gt
+        &ltimg style = "width: 200px; height: 200px;"src ="very long url"&gt
+        &ltp style= "text-align: center;"&gtC is for Carrot&lt/p&gt
+    &lt/div&gt
+&lt/div&gt
+&ltdiv class="card"&gt
+    &ltdiv class="content"&gt
+        &ltimg style = "width: 200px; height: 200px;"src ="very long url"&gt
+        &ltp style= "text-align: center;"&gtD is for Dragonfruit&lt/p&gt
+    &lt/div&gt
+&lt/div&gt
+&ltdiv class="card"&gt
+    &ltdiv class="content"&gt
+        &ltimg style = "width: 200px; height: 200px;"src ="very long url"&gt
+        &ltp style= "text-align: center;"&gtE is for Edamame&lt/p&gt
+    &lt/div&gt
+&lt/div&gt
+&lt/body&gt
+&lt/html&gt
+            </div>
+            <div style = 'color:blue;'class="column">
+div {
+    display: inline-block;
+}
+  
+.card {
+    border-radius: 25px;
+    width: 300px;
+    height: 300px;
+    border: 3px double #000000;
+    background-color: #ffffff;
+}
+  
+.content {
+    border-radius: 25px;
+    margin: 10px;
+    padding: 40px;
+    width: 200px;
+    height: 200px;
+    background-color: #ffffff;
+}
+            </div>
+          </div>
     </body>
 </html>
