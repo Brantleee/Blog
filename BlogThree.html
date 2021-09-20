@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="blogTwoCSS.css">
+      </head>
+    <body>
+        <h1 style = 'text-align: center;'>
+            Flexing with HTML
+        </h1>
+        <h3 style = 'text-align: center;'>
+            <e>CS347</e>
+        </h3>
+        <p>
+            Flexbox's have definitely been the most difficult concept to learn thus far. Specifically because of how precise you need to be when creating them. I've realized how powerful and useful they are to implement, however, I'm still having difficulty on the implement part. I've learned alot about flex parents and children, and how to justify elements rather than use margin to define them, but I continue to find the difficulties that lay within flexbox.  I was able to create some very cool displays using flexbox, of which I believe looked professional, and even still I know I've only scratched the surface of what they can do.
+        </p>
+        <dl>
+            During flexbox labs especially I found my self reffering to external sources for help quite frequently, and out of all the sources I visited these were the most impactful
+            <dt>Centering items in a flexbox</dt>
+            <dd><a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container">MDN Web Docs</a> did a great job providing an overall basis for how to center and position items within a flexbox on this page</dd>
+            <dt>Making a collage with flexbox</dt>
+            <dd>The second flexbox lab was incredible difficult, and I have no doubt that without the help of <a href = "https://css-tricks.com/adaptive-photo-layout-with-flexbox/">CSS Tricks</a> I wouldn't have been able to figure it out</dd>
+        </dl>
+        <pre>
+Here is an example of some coding I did this week!
+<div class="row">
+    <div style = 'color:blue;'class="column">
+<pre><code>
+&lt!DOCTYPE html&gt
+&lthtml&gt
+    
+    &lthead&gt
+        &ltlink rel="stylesheet" href="lab6.css"&gt
+    &lt/head&gt
+    
+    &ltdiv class="container"&gt
+        &ltspan class="child"&gt&ltimg src = "https://tinyurl.com/rt8vxmve"&gt&lt/span&gt
+        &ltspan class="child"&gt&ltimg src = "https://tinyurl.com/3nnvxp8f"&gt&lt/span&gt
+        &ltspan class="child"&gt&ltimg src = "https://tinyurl.com/erpukyj7"&gt&lt/span&gt
+    &lt/div&gt
+    
+&lt/html&gt
+</code></pre>
+    </div>
+    <div style = 'color:blue;'class="column">
+<pre><code>
+body {
+    margin: 0;
+        
+    }
+      
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100vh;
+    background-color: lightgray;
+    justify-content: center;
+    align-content: center;
+}
+      
+.child {
+    display: flex;
+    margin: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 5px;
+    vertical-align: bottom;
+    align-items: center;
+    bottom:0
+}
+      
+.humongous {
+    font-size: 6em;
+    margin-top: auto;
+    margin-bottom: auto;
+    position:fixed;
+}
+</code></pre>
+    </div>
+  </div>
+</body>
+</html>
