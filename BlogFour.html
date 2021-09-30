@@ -1,0 +1,121 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="blogTwoCSS.css">
+      </head>
+    <body>
+        <h1 style = 'text-align: center;'>
+            Formatting and Quokkas
+        </h1>
+        <h3 style = 'text-align: center;'>
+            <e>CS347</e>
+        </h3>
+        <p>
+            Aligning and justifying elements on a page continues to be a tricky task! Especially in this past weeks labs! I found just how difficult it can be specifying in HTML the layout, size, and alignment of text, images, and boxes on screen. I had a very hard time doing the Pricing Panels lab, as I couldn't get the containers, and buttons to want to align. After some messing around however, I managed to do it!
+        </p>
+        <dl>
+            With the help of these sources I was able to power through this weeks labs
+            <dt>Margins and text</dt>
+            <dd><a href = "https://html-shark.com/HTML/TextMarginIndent.htm">HTML Shark</a> largely improved my understanding of margins and how to align text on a page.</dd>
+            <dt>Adding SVG's to a page</dt>
+            <dd>Thanks to <a href = "https://www.w3schools.com/html/html5_svg.asp">W3 Schools</a> I was able to add the SVGs to my lab, proving it to be a bit easier than I had originally anticipated.</dd>
+        </dl>
+        <pre>
+Here is an example of some coding I did this week!
+<div class="row">
+    <div style = 'color:blue;'class="column">
+<pre><code>
+&lt!DOCTYPE html&gt
+&lthtml&gt
+    
+&lthead&gt
+    &lttitle&gtGiggle&lt/title&gt
+    &ltlink rel="stylesheet" href="lab10.css"&gt
+    &ltmeta name="viewport" content="width=device-width,initial-scale=1"&gt
+&lt/head&gt
+    
+&ltbody&gt
+    &ltmain&gt
+        &lth1&gtGiggle&lt/h1&gt
+        &ltform id="form"&gt 
+        &ltinput type="search" id="query" name="q" placeholder="what you want?"&gt
+        &lt/form&gt
+            
+    &lt/main&gt
+&lt/body&gt
+&lt/html&gt
+</code></pre>
+    </div>
+    <div style = 'color:blue;'class="column">
+<pre><code>
+@media (prefers-color-scheme: light) {
+    :root {
+        --background-color: #f5e7c2;
+        --text-color: #121416d8;
+        --border-color: #009698;
+        --search-bar-color: white;        
+    }
+}
+        
+@media (prefers-color-scheme: dark) {
+    :root {  
+        --background-color: #333333;
+        --text-color: #009698;
+        --border-color: #450084;
+        --search-bar-color: white;            
+    }
+}
+        
+form {
+    background-color: var(--search-bar-color);
+    width: 300px;
+    height: 44px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: var(--border-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+          
+input {
+    all: unset;
+    font: 16px system-ui;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+}
+        
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+    font-size: 15px;
+    letter-spacing: -0.3px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    vertical-align: middle;
+}
+        
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-color);
+    margin: none;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    font-size: 80px;
+    letter-spacing: 9px;
+}
+        
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 15px;
+    margin: 20px 0;
+}
+</code></pre>
+    </div>
+  </div>
+</body>
+</html>
